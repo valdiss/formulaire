@@ -15,6 +15,7 @@
         <form class="Vos détails" action="index.html" method="post">
             <fieldset>
                 <legend>Informations personnelles</legend>
+                <img src="donut.jpg" alt="image de donut" />
                 <div>
                     <label for="sexe">Votre Titre</label>
                     <select class="sexe" name="sexe">
@@ -47,6 +48,26 @@
                 <div>
                     <label for="tel">Téléphone </label>
                     <input type="tel" name="tel" id="tel" maxlength="10">
+                </div>
+
+                <div>
+                  <label for="date">Date de naissance</label>
+                  <input type="date" name="date" id="date">
+                </div>
+
+                <div>
+                  <label for="url">Skyblog </label>
+                  <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comment avez-vous connu ce site?</legend>
+                <div id="r1">
+                    <label for="r1">Selectionnez</label>
+                    <input type="radio" name="name" value="Internet">
+                    <input type="radio" name="name" value="Journal papier">
+                    <input type="radio" name="name" value="Non">
                 </div>
             </fieldset>
             <div class="button">
