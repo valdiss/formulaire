@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire de renseignement</h1>
+    </header>
+    <section>
+        <form class="Vos détails" action="index.html" method="post">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div>
+                    <label for="sexe">Votre Titre</label>
+                    <select class="sexe" name="sexe">
+                      <option value="option">Monsieur</option>
+                      <option value="option">Madame</option>
+                      <option value="option">Seigneur</option>
+                      <option value="option">Lord</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="prenom">Prénom </label>
+                    <input type="text" name="firstname" id="prenom">
+                </div>
+                <div>
+                    <label for="nom">Nom </label>
+                    <input type="text" name="name" id="nom">
+                </div>
+                <div>
+                    <label for="adress1">Adresse 1 </label>
+                    <input type="text" name="adresse1" id="adress1">
+                </div>
+                <div>
+                    <label for="adress2">Adresse 2 </label>
+                    <input type="text" name="adresse2" id="adress2">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="mail" id="email" placeholder="ex:john.doe@mail.com">
+                </div>
+                <div>
+                    <label for="tel">Téléphone </label>
+                    <input type="tel" name="tel" id="tel" maxlength="10">
+                </div>
+            </fieldset>
+            <div class="button">
+                <button type="submit">Envoyer votre message</button>
+            </div>
+        </form>
+        <footer></footer>
+</body>
+
+</html>

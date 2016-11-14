@@ -1,0 +1,46 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: "handwriting-draft", sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-image: url("licorne.jpg");
+}
+
+fieldset {
+    border-radius: 10px;
+    background-color: white;
+}
+
+input {
+    border-radius: 3px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 90px;
+}
+
+#adress1, #adress2 {
+    width: 50%;
+}
+
+#email {
+    width: 30%;
+}
+
+@font-face {
+    src: url("LittleBird.ttf");
+    font-family: "handwriting-draft";
+}
