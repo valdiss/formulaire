@@ -13,7 +13,7 @@
     </header>
     <section>
         <form class="Vos détails" action="index.html" method="post">
-            <fieldset>
+            <fieldset id="f1">
                 <legend>Informations personnelles</legend>
                 <img src="donut.jpg" alt="image de donut" />
                 <div>
@@ -42,6 +42,10 @@
                     <input type="text" name="adresse2" id="adress2">
                 </div>
                 <div>
+                    <label for="postal">Code postal </label>
+                    <input type="text" name="postal" id="postal" maxlength="5">
+                </div>
+                <div>
                     <label for="email">Email</label>
                     <input type="email" name="mail" id="email" placeholder="ex:john.doe@mail.com">
                 </div>
@@ -51,23 +55,35 @@
                 </div>
 
                 <div>
-                  <label for="date">Date de naissance</label>
-                  <input type="date" name="date" id="date">
+                    <label for="date">Date de naissance</label>
+                    <input type="date" name="date" id="date">
                 </div>
 
                 <div>
-                  <label for="url">Skyblog </label>
-                  <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                    <label for="url">Skyblog </label>
+                    <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="f2">
                 <legend>Comment avez-vous connu ce site?</legend>
+                <label for="r1">Par quel biais avez-vous connu ce site?</label>
                 <div id="r1">
-                    <label for="r1">Selectionnez</label>
-                    <input type="radio" name="name" value="Internet">
-                    <input type="radio" name="name" value="Journal papier">
-                    <input type="radio" name="name" value="Non">
+                    <input type="radio" name="internet" id="internet" value="Internet">
+                    <label for="internet">Internet</label>
+                    <input type="radio" name="journal" id="journal" value="Journal papier">
+                    <label for="journal">Journal Papier</label>
+                    <input type="radio" name="bouche" id="bouche" value="Bouche">
+                    <label for="bouche">Bouche à oreille</label>
+                </div>
+                <label for="r2">De quel instrument jouez vous?</label>
+                <div id="r2">
+                    <input type="checkbox" name="basse" id="basse" value="basse">
+                    <label for="basse">Slappa da bass!</label>
+                    <input type="checkbox" name="guitare" id="guitare" value="guitare">
+                    <label for="guitare">Tocard de grateux!</label>
+                    <input type="checkbox" name="batterie" id="batterie" value="batterie">
+                    <label for="batterie">Poum tchak!</label>
                 </div>
             </fieldset>
             <div class="button">

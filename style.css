@@ -7,6 +7,7 @@ h1 {
 form {
     margin: 0 auto;
     width: 80%;
+    min-width: 500px;
     padding: 10px;
     border: 1px solid grey;
     border-radius: 10px;
@@ -24,6 +25,7 @@ legend {
 
 img {
     float: right;
+    width: 25%;
 }
 
 input {
@@ -34,10 +36,20 @@ div {
     margin-top: 10px;
 }
 
-label {
+
+#f1 label {
     display: inline-block;
     text-align: left;
     width: 90px;
+}
+
+#f2 div label {
+    width: auto;
+    font-style: italic;
+}
+
+#f2 div {
+    margin-bottom: 10px;
 }
 
 #adress1, #adress2 {
@@ -48,7 +60,20 @@ label {
     width: 30%;
 }
 
+#postal {
+    width: 80px;
+}
+
 @font-face {
     src: url("LittleBird.ttf");
     font-family: "handwriting-draft";
+}
+
+@media screen and (max-width:1200px) {
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 2em;
+  }
 }
