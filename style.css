@@ -36,7 +36,6 @@ div {
     margin-top: 10px;
 }
 
-
 #f1 label {
     display: inline-block;
     text-align: left;
@@ -64,16 +63,34 @@ div {
     width: 80px;
 }
 
+button {
+    float: right;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+button:active {
+    box-shadow: inset 1px 1px 5px grey;
+}
+
+button:focus {
+    outline: none;
+}
+
 @font-face {
     src: url("LittleBird.ttf");
     font-family: "handwriting-draft";
 }
 
 @media screen and (max-width:1200px) {
-  img {
-    display: none;
-  }
-  h1 {
-    font-size: 2em;
-  }
+    img {
+        display: none;
+    }
+    h1 {
+        font-size: 2em;
+    }
 }
